@@ -1,7 +1,7 @@
 # PATHS: change accordingly
-data_directory: '/path/to/dataset' # path to wavs and metafile directory
-log_directory: '/path/to/logdir'   # weights and logs are stored here
-metadata_filename: 'metadata.csv'  # name of metadata file under data_directory
+data_directory: 'data/vlsp/' # path to wavs and metafile directory
+log_directory: 'experiments/'   # weights and logs are stored here
+metadata_filename: 'metadata.txt'  # name of metadata file under data_directory
 train_metadata_filename: 'train_metafile.txt' # target file for training metadata
 train_data_directory: 'transformer_tts_data'   # training data is stored here
 valid_metadata_filename: 'valid_metafile.txt'
@@ -26,5 +26,5 @@ f_min: 0
 f_max: 8000
 normalizer: MelGAN                 # which mel normalization to use from utils.audio.py [MelGAN or WaveRNN]
 # TOKENIZER
-phoneme_language: 'en-us'
+phoneme_language: 'vi' # Mien trung (vi-vn-x-central), Mien bac (vi)
 with_stress: True                  # use stress symbols in phonemization
